@@ -30,7 +30,8 @@ h2 {
   margin-bottom: 1rem;
 }
 
-img.right {
+img.right, 
+iframe.right {
   float: right;
   width: 100%;
 }
