@@ -1,0 +1,94 @@
+header, footer {text-align: center;}
+
+h1, 
+h2, 
+a,
+p {
+  font-family: 'Zilla Slab', sans-serif; 
+}
+
+p, a {
+  font-size: 1.2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+p.tight {
+  margin-bottom: 0;
+}
+
+header nav {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+img.right {
+  float: right;
+  width: 100%;
+}
+
+img.logo-right {
+  float: right;
+}
+
+article {
+  max-width: 90%;
+  margin: auto;
+}
+
+nav {
+  margin-bottom: 1rem;
+}
+
+
+/* GRID CSS from responsivegridsystem.com: */
+
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+    width: 100%;
+}
+.span_1_of_2 {
+    width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col { 
+        margin: 1% 0 1% 0%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+/* End of css from responsivegridsystem.com */
