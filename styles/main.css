@@ -1,36 +1,105 @@
-header, footer {text-align: center;}
+/* Sections layout */
 
-h1, 
-h2, 
-a,
-p {
-  font-family: 'Zilla Slab', sans-serif; 
+/* override the normal box model sizing rules */
+* {box-sizing: border-box;}
+
+header, section, footer, aside, nav, article, figure, figcaption 
+{
+    display: block;
 }
 
-p, a {
-  font-size: 1.2rem;
-}
-
-p {
+img.navlogo {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-p.tight {
-  margin-bottom: 0;
+header {
+  text-align: center;
+  background-color: #aeaca8;
+  margin-bottom: 0.8rem;
+  width=50%;
+}
+
+header h1 {
+  padding-top: 0.8rem;
 }
 
 header nav {
   margin-top: 1rem;
-  margin-right: 1rem;
   margin-bottom: 1rem;
-  margin-left: 1rem;
+  padding-bottom: 0.7rem;
+}
+
+article {
+  max-width: 90%;
+  margin: auto;
+  background-color: #dad4c8;
+}
+
+footer {
+  text-align: center;
+  margin-top: 1.3rem;
+  margin-bottom: 1rem;
+  background-color: #aeaca8;
+  padding-top: 0.7rem;
+  padding-bottom: 0.8rem;
+}
+
+p.copyright {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+
+/* Font formatting */
+
+h1 {
+  font-family: 'Zilla Slab', sans-serif; 
 }
 
 h2 {
+  font-family: 'Zilla Slab', sans-serif; 
   margin-bottom: 1rem;
 }
 
-img.right, 
+p {
+  font-family: 'Zilla Slab', sans-serif; 
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  line-height: 1.4rem;
+}
+
+p.tight {
+  padding-bottom: 0.2rem;
+}
+
+nav a {
+  font-family: 'Zilla Slab', sans-serif; 
+  font-size: 1.2rem;
+  padding-right: 0.7rem;
+  color: #ffffff;
+}
+
+nav a:hover 
+{
+   color: #000000;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+
+/* Images layout */
+
+img.right {
+  float: right;
+  width: 100%;
+}
+
 iframe.right {
   float: right;
   width: 100%;
@@ -40,17 +109,8 @@ img.logo-right {
   float: right;
 }
 
-article {
-  max-width: 90%;
-  margin: auto;
-}
 
-nav {
-  margin-bottom: 1rem;
-}
-
-
-/* GRID CSS from responsivegridsystem.com: */
+/* ======== GRID CSS from responsivegridsystem.com: ======== */
 
 /*  SECTIONS  */
 .section {
@@ -92,4 +152,4 @@ nav {
     .span_2_of_2, .span_1_of_2 { width: 100%; }
 }
 
-/* End of css from responsivegridsystem.com */
+/* ======== End of css from responsivegridsystem.com ======== */
