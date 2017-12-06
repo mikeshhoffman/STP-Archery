@@ -8,6 +8,10 @@ header, section, footer, aside, nav, article, figure, figcaption
     display: block;
 }
 
+body {
+  background-color: #dad4c8;
+}
+
 img.navlogo {
   display: block;
   margin: auto;
@@ -16,14 +20,17 @@ img.navlogo {
 }
 
 header {
-  text-align: center;
   background-color: #aeaca8;
-  margin-bottom: 0.8rem;
-  width=50%;
+  text-align: center;
+  padding-top: 0.7rem;
 }
 
-header h1 {
-  padding-top: 0.8rem;
+header.logo {
+  background-color: white;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
 }
 
 header nav {
@@ -77,6 +84,7 @@ p.tight {
 }
 
 nav a {
+  text-decoration: none;
   font-family: 'Zilla Slab', sans-serif; 
   font-size: 1.2rem;
   padding-right: 0.7rem;
@@ -86,10 +94,6 @@ nav a {
 nav a:hover 
 {
    color: #000000;
-}
-
-nav a {
-  text-decoration: none;
 }
 
 
